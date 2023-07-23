@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: grey;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    flex: 1;
+  }
+  
+  .logo {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-item {
+    margin-right: 1rem;
+  }
+  
+  .nav-link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
