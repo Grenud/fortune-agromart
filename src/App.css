@@ -1,0 +1,91 @@
+/* ---------------- Global CSS ---------------- */
+
+
+:root{
+    /* Major Colors */
+    --background: white;
+    --primary-color: green;
+
+    /* Major Fonts */
+}
+
+
+
+
+
+
+
+/* ------------------ Tags ------------------- */
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+
+
+
+
+
+/* ---------------- Utility Classes ----------------- */
+
+.ico-btn{
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 10px 12px;
+    font-size: 18px;
+    margin: 0px 20px;
+    transition: all 0.3s ease-in;
+}
+
+.ico-btn:hover{
+    background-color: rgba(226, 226, 226, 0.553);
+    cursor: pointer;
+}
+
+
+
+/* -------------- Navbar ---------------- */
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .left, nav .mid, nav .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Left */
+nav .left .branding{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+/* Right */
+nav .right ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.right ul li{
+    margin: 0px 10px;
+}
+
+.right ul li .nav-tab{
+    color: black;
+    font-weight: bold;
+}
