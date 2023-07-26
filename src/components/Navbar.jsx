@@ -1,12 +1,29 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
+import Sidebar from './Sidebar';
+
+
+
+function showSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    
+    if (sidebar.classList.contains("hide-sidebar")){
+        sidebar.classList.remove("hide-sidebar");
+    }
+
+    sidebar.classList.add("show-sidebar");
+}
+
+
+
 const Navbar = () => {
   return (
     
+    <>
     <nav id='navbar'>
         <div className="left">
-            <button className='ico-btn' id='hamburger'><i class="fa-solid fa-bars"></i></button>
+            <button className='ico-btn' id='hamburger' onClick={showSidebar}><i className="fa-solid fa-bars"></i></button>
             <a href="/" className='branding'>
                 <img src="" alt="Fortune-Agromart" className="logo" />
             </a>
@@ -23,6 +40,8 @@ const Navbar = () => {
         </div>
     </nav>
 
+    <Sidebar/>
+    </>
   )
 }
 
