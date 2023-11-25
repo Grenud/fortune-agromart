@@ -23,7 +23,7 @@ const Navbar = () => {
             setNavState(true);
             setNavColor("white");
             setNavLinkColor("darkText")
-            setNavBtnStyle("bg-primary text-[darkText] border-0")
+            setNavBtnStyle("bg-primary text-[darkText] border-[transparent] border-0")
         }
         else if (scrollTop <= 200){
             setNavState(false);
@@ -41,7 +41,7 @@ const Navbar = () => {
       className={`navbar flex p-[18px] px-[20px] justify-evenly items-center border-[0.2px] border-b-[#ffffff63] fixed w-screen z-[999] bg-[${navColor}] ${(navState) ? "shadow-md" : ""} hover:shadow-md hover:bg-[white] transition-all duration-300`}
       onMouseOver={() => {
         setNavLinkColor("darkText")
-        setNavBtnStyle("bg-primary text-[darkText] border-0")
+        setNavBtnStyle("bg-primary text-[darkText] border-[transparent] border-0")
       }}
       onMouseOut={() => {
         if (!navState){
