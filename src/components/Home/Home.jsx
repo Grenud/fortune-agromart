@@ -3,9 +3,17 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
 
+  // Page section refs
   const overviewRef = useRef(null);
   const approachRef = useRef(null);
   const expertiseRef = useRef(null);
+
+  // Sub Section refs
+  const subSection1Ref = useRef(null);
+  const subSection2Ref = useRef(null);
+  const subSection3Ref = useRef(null);
+  const subSection4Ref = useRef(null);
+  const subSection5Ref = useRef(null);
 
   const scrollToElement = (ref) => {
     ref.current?.scrollIntoView({behavior: 'smooth'});
@@ -158,14 +166,14 @@ const Home = () => {
           <p className='text-[#424242] w-[30%] '>Project management is the key to the successful delivery of your product. Our effective model is based on an adaptive, incremental process that complements traditional project management with Agile practices to deliver the most value.<br/><br/>We help you successfully deliver concept-to-product projects, implement iterative efforts to make your product better, and maintain a great relationship in the process.</p>
         </header>
 
-        <div className='flex justify-center items-center bg-[#f2f5f7] pt-[8em]'>
-          <div className="">
+        <div className='relative flex justify-center items-start bg-[#f2f5f7] py-[8em]'>
+          <div className="sticky top-[80px]">
             <img src="https://www.netguru.com/hs-fs/hubfs/Screenshot%202023-05-25%20at%2011.29.22.png?width=669&height=690&name=Screenshot%202023-05-25%20at%2011.29.22.png" alt="" />
           </div>
 
-          <div className='flex flex-col justify-center items-center w-[40%] mx-[10px] px-[25px] py-[20px]'>
+          <div className='flex flex-col justify-center items-center w-[40%] mx-[10px] px-[25px] pb-[20px]'>
 
-            <div className='bg-[white] w-[100%] p-[30px] my-[15px] flex flex-col justify-center items-center'>
+            <div className='bg-[white] w-[100%] p-[30px] mb-[15px] mt-[0px] flex flex-col justify-center items-center'>
               <h5 className='relative text-[20px] w-[75%] font-bold p-[20px] mb-4'><span className="absolute z-[0] text-[80px] top-[-24px] left-[-56px] text-[#dddddd]">01</span><span className='relative z-[1]'>Requirements and Plan</span></h5>
               <p className='w-[75%]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eius natus, dolores laboriosam adipisci ad fugiat cum tempore deserunt, architecto eligendi. Quod molestias hic saepe?</p>
             </div>
@@ -198,7 +206,149 @@ const Home = () => {
           </div>
         </div>
 
+        <div className='relative flex justify-center items-start pt-[8em]'>
+
+          <div className='flex flex-col justify-center items-center w-[60%] mx-[10px] px-[25px] py-[20px]'>
+
+            <div ref={subSection1Ref}></div>
+            <div className='bg-[white] w-[100%] p-[30px] my-[15px] flex flex-col justify-center items-start'>
+              <h2 className='text-[30px] w-[75%] font-bold py-[20px] mb-4'>Agile Project Management: End chaos and gain control</h2>
+              <p className='w-[75%]'>Agile is an iterative, flexible approach to software development that embraces the fact that requirements evolve as a product develops.<br/><br/>Project Management is the application of knowledge, skills, tools and techniques to project activities in order to meet the project requirements.<br/><br/>Agile Project Management controls software development by delivering work against requirements iteratively and incrementally. User needs evolve and we need to adapt to the changes that can occur throughout a project’s life cycle.<br/><br/>To create products that align with user needs and business objectives, we encourage short development cycles that continuously improve the product.<br/><br/>Requirements and solutions evolve through collaboration between customers, end users and self-organizing, cross-functional teams.<br/><br/>The Agile Project Management philosophy stems from the core values highlighted in the Agile Manifesto:<br/><br/>As agile proponents, we value:</p>
+              <ul className='p-[10px]'>
+                <li className='px-[10px] py-[20px]'>
+                  <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Individuals and interactions</span> over processes and tools</p>
+                </li>
+                <li className='px-[10px] py-[20px]'>
+                  <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Working software</span>  over comprehensive documentation</p>
+                </li>
+                <li className='px-[10px] py-[20px]'>
+                  <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Customer collaboration</span>  over contract negotiation</p>
+                </li>
+                <li className='px-[10px] py-[20px]'>
+                  <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Responding to change</span>  over following a plan</p>
+                </li>
+              </ul>
+              <p className='w-[75%]'>and alike the Independent Signatories of the Manifesto for Agile Software Development, we also believe that there is value in the items on the right, yet we value the items on the left more.<br/><br/>Agile is an umbrella term for a number of methodologies and frameworks, sharing the principles and values described above. Each of them has its own areas of use and distinctive features. Organizations often utilize agile methods like Kanban or Scrum to improve time to market, quality, and happiness.</p>
+            </div>
+
+            <div ref={subSection2Ref}></div>
+            <div className='bg-[white] w-[100%] p-[30px] my-[15px] flex flex-col justify-center items-start'>
+              <h2 className='text-[30px] w-[75%] font-bold py-[20px] mb-4'>Agile Project Management vs Traditional Project Management Methodologies</h2>
+                <p className='w-[75%]'>Agile is an iterative, flexible approach to software development that embraces the fact that requirements evolve as a product develops.<br/><br/>Project Management is the application of knowledge, skills, tools and techniques to project activities in order to meet the project requirements.<br/><br/>Agile Project Management controls software development by delivering work against requirements iteratively and incrementally. User needs evolve and we need to adapt to the changes that can occur throughout a project’s life cycle.<br/><br/>To create products that align with user needs and business objectives, we encourage short development cycles that continuously improve the product.<br/><br/>Requirements and solutions evolve through collaboration between customers, end users and self-organizing, cross-functional teams.<br/><br/>The Agile Project Management philosophy stems from the core values highlighted in the Agile Manifesto:<br/><br/>As agile proponents, we value:</p>
+                <ul className='p-[10px]'>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Individuals and interactions</span> over processes and tools</p>
+                  </li>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Working software</span>  over comprehensive documentation</p>
+                  </li>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Customer collaboration</span>  over contract negotiation</p>
+                  </li>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Responding to change</span>  over following a plan</p>
+                  </li>
+                </ul>
+                <p className='w-[75%]'>and alike the Independent Signatories of the Manifesto for Agile Software Development, we also believe that there is value in the items on the right, yet we value the items on the left more.<br/><br/>Agile is an umbrella term for a number of methodologies and frameworks, sharing the principles and values described above. Each of them has its own areas of use and distinctive features. Organizations often utilize agile methods like Kanban or Scrum to improve time to market, quality, and happiness.</p>
+            </div>
+
+            <div ref={subSection3Ref}></div>
+            <div className='bg-[white] w-[100%] p-[30px] my-[15px] flex flex-col justify-center items-start'>
+              <h2 className='text-[30px] w-[75%] font-bold py-[20px] mb-4'>The advantages of Agile Methodologies</h2>
+                <p className='w-[75%]'>Agile is an iterative, flexible approach to software development that embraces the fact that requirements evolve as a product develops.<br/><br/>Project Management is the application of knowledge, skills, tools and techniques to project activities in order to meet the project requirements.<br/><br/>Agile Project Management controls software development by delivering work against requirements iteratively and incrementally. User needs evolve and we need to adapt to the changes that can occur throughout a project’s life cycle.<br/><br/>To create products that align with user needs and business objectives, we encourage short development cycles that continuously improve the product.<br/><br/>Requirements and solutions evolve through collaboration between customers, end users and self-organizing, cross-functional teams.<br/><br/>The Agile Project Management philosophy stems from the core values highlighted in the Agile Manifesto:<br/><br/>As agile proponents, we value:</p>
+                <ul className='p-[10px]'>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Individuals and interactions</span> over processes and tools</p>
+                  </li>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Working software</span>  over comprehensive documentation</p>
+                  </li>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Customer collaboration</span>  over contract negotiation</p>
+                  </li>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Responding to change</span>  over following a plan</p>
+                  </li>
+                </ul>
+                <p className='w-[75%]'>and alike the Independent Signatories of the Manifesto for Agile Software Development, we also believe that there is value in the items on the right, yet we value the items on the left more.<br/><br/>Agile is an umbrella term for a number of methodologies and frameworks, sharing the principles and values described above. Each of them has its own areas of use and distinctive features. Organizations often utilize agile methods like Kanban or Scrum to improve time to market, quality, and happiness.</p>
+            </div>
+
+            <div ref={subSection4Ref}></div>
+            <div className='bg-[white] w-[100%] p-[30px] my-[15px] flex flex-col justify-center items-start'>
+              <h2 className='text-[30px] w-[75%] font-bold py-[20px] mb-4'>Agile Sprint Planning</h2>
+                <p className='w-[75%]'>Agile is an iterative, flexible approach to software development that embraces the fact that requirements evolve as a product develops.<br/><br/>Project Management is the application of knowledge, skills, tools and techniques to project activities in order to meet the project requirements.<br/><br/>Agile Project Management controls software development by delivering work against requirements iteratively and incrementally. User needs evolve and we need to adapt to the changes that can occur throughout a project’s life cycle.<br/><br/>To create products that align with user needs and business objectives, we encourage short development cycles that continuously improve the product.<br/><br/>Requirements and solutions evolve through collaboration between customers, end users and self-organizing, cross-functional teams.<br/><br/>The Agile Project Management philosophy stems from the core values highlighted in the Agile Manifesto:<br/><br/>As agile proponents, we value:</p>
+                <ul className='p-[10px]'>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Individuals and interactions</span> over processes and tools</p>
+                  </li>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Working software</span>  over comprehensive documentation</p>
+                  </li>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Customer collaboration</span>  over contract negotiation</p>
+                  </li>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Responding to change</span>  over following a plan</p>
+                  </li>
+                </ul>
+                <p className='w-[75%]'>and alike the Independent Signatories of the Manifesto for Agile Software Development, we also believe that there is value in the items on the right, yet we value the items on the left more.<br/><br/>Agile is an umbrella term for a number of methodologies and frameworks, sharing the principles and values described above. Each of them has its own areas of use and distinctive features. Organizations often utilize agile methods like Kanban or Scrum to improve time to market, quality, and happiness.</p>
+            </div>
+
+            <div ref={subSection5Ref}></div>
+            <div className='bg-[white] w-[100%] p-[30px] my-[15px] flex flex-col justify-center items-start'>
+              <h2 className='text-[30px] w-[75%] font-bold py-[20px] mb-4'>Agile Development Process at Netguru</h2>
+                <p className='w-[75%]'>Agile is an iterative, flexible approach to software development that embraces the fact that requirements evolve as a product develops.<br/><br/>Project Management is the application of knowledge, skills, tools and techniques to project activities in order to meet the project requirements.<br/><br/>Agile Project Management controls software development by delivering work against requirements iteratively and incrementally. User needs evolve and we need to adapt to the changes that can occur throughout a project’s life cycle.<br/><br/>To create products that align with user needs and business objectives, we encourage short development cycles that continuously improve the product.<br/><br/>Requirements and solutions evolve through collaboration between customers, end users and self-organizing, cross-functional teams.<br/><br/>The Agile Project Management philosophy stems from the core values highlighted in the Agile Manifesto:<br/><br/>As agile proponents, we value:</p>
+                <ul className='p-[10px]'>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Individuals and interactions</span> over processes and tools</p>
+                  </li>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Working software</span>  over comprehensive documentation</p>
+                  </li>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Customer collaboration</span>  over contract negotiation</p>
+                  </li>
+                  <li className='px-[10px] py-[20px]'>
+                    <p><span className='text-[green]'>⦿</span> <span className='font-semibold'>Responding to change</span>  over following a plan</p>
+                  </li>
+                </ul>
+                <p className='w-[75%]'>and alike the Independent Signatories of the Manifesto for Agile Software Development, we also believe that there is value in the items on the right, yet we value the items on the left more.<br/><br/>Agile is an umbrella term for a number of methodologies and frameworks, sharing the principles and values described above. Each of them has its own areas of use and distinctive features. Organizations often utilize agile methods like Kanban or Scrum to improve time to market, quality, and happiness.</p>
+            </div>
+
+          </div>
+
+          <div className="sticky top-[80px] w-[18%]">
+            <div className='bg-[#f2f5f7] py-[40px] px-[30px] w-[100%] my-[30px]'>
+
+              <h4 className='font-semibold text-[20px]'>Contents</h4>
+
+              <ul className=''>
+                <li className='my-[15px] w-[90%] text-[15px] truncate text-[#797979] hover:text-[black] hover:underline'>
+                  <Link onClick={() => {scrollToElement(subSection1Ref)}} className='w-[90%]'>Agile Project Management: End chaos and gain control</Link>
+                </li>
+                <li className='my-[15px] w-[90%] text-[15px] truncate text-[#797979] hover:text-[black] hover:underline'>
+                  <Link onClick={() => {scrollToElement(subSection2Ref)}} className='w-[90%]'>Agile Project Management vs Traditional Project Management Methodologies</Link>
+                </li>
+                <li className='my-[15px] w-[90%] text-[15px] truncate text-[#797979] hover:text-[black] hover:underline'>
+                  <Link onClick={() => {scrollToElement(subSection3Ref)}} className='w-[90%]'>The advantages of Agile Methodologies</Link>
+                </li>
+                <li className='my-[15px] w-[90%] text-[15px] truncate text-[#797979] hover:text-[black] hover:underline'>
+                  <Link onClick={() => {scrollToElement(subSection4Ref)}} className='w-[90%]'>Agile Sprint Planning</Link>
+                </li>
+                <li className='my-[15px] w-[90%] text-[15px] truncate text-[#797979] hover:text-[black] hover:underline'>
+                  <Link onClick={() => {scrollToElement(subSection5Ref)}} className='w-[90%]'>Agile Development Process at Netguru</Link>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+
       </section>
+
+
+      
       <section ref={expertiseRef}></section>
 
     </>
