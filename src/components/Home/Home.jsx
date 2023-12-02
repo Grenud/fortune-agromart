@@ -99,7 +99,7 @@ const Home = () => {
 
           </div>
 
-          <Link href="#" className='inline-block text-center my-[30px] hover:underline hover:text-[#6e6e6e] transition-all' >Let's Work Together <i className="transition-all translate-x-1 fa-solid fa-chevron-right"></i></Link>
+          <Link href="#" className='font-semibold inline-block text-center my-[30px] hover:underline hover:text-[#6e6e6e] transition-all' >Let's Work Together <i className="transition-all translate-x-1 fa-solid fa-chevron-right"></i></Link>
 
         </main>
 
@@ -152,7 +152,7 @@ const Home = () => {
 
           </div>
 
-          <Link href="#" className='inline-block text-center my-[30px] hover:underline hover:text-[#6e6e6e] transition-all' >Let's Work Together <i className="transition-all translate-x-1 fa-solid fa-chevron-right"></i></Link>
+          <Link href="#" className='font-semibold inline-block text-center my-[30px] hover:underline hover:text-[#6e6e6e] transition-all' >Let's Work Together <i className="transition-all translate-x-1 fa-solid fa-chevron-right"></i></Link>
 
         </div>
 
@@ -348,8 +348,128 @@ const Home = () => {
       </section>
 
 
-      
-      <section ref={expertiseRef}></section>
+
+      <section ref={expertiseRef}>
+
+        <header className='flex justify-evenly items-center px-[10px] py-[50px]'>
+          <h1 className='relative text-[35px] w-[30%] font-bold'><span className="absolute z-[-1] text-[93px] top-[0px] left-[-56px] text-[#dddddd]">03</span> Our project management consultants help innovators to deliver the most value</h1>
+          <p className='text-[#424242] w-[30%] '>Netguru helps innovators maximise their products’ business value through implementation of Agile and Project Management practices.<br/><br/>2Our team of 60+ multi-disciplinary and certified Project Managers, Scrum Masters, Product Owners and Agile Coaches have experience in international projects for startups and well-established enterprises. We will support you on your Agile journey.</p>
+        </header>
+
+        <main className='flex flex-col justify-center items-center bg-[#f2f5f7] py-[6em]'>
+
+          <div className="flex justify-center items-center py-[25px]">
+            <img src="https://images.unsplash.com/photo-1530464684439-723262c0d16e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZhcm1pbmd8ZW58MHwxfDB8fHww" className='rounded-md w-[30%]' alt="Soil" />
+
+            <div className='flex flex-col justify-center items-start w-[40%] mx-[85px] px-[25px] pb-[20px]'>
+              <h2 className='text-[30px] w-[75%] font-bold py-[20px] mb-4'>Agile Project Management: End chaos and gain control</h2>
+              <p className='w-[75%] text-[15px]'>Agile is an iterative, flexible approach to software development that embraces the fact that requirements evolve as a product develops.<br/><br/>Project Management is the application of knowledge, skills, tools and techniques to project activities in order to meet the project requirements.<br/><br/>Agile Project Management controls software development by delivering work against requirements iteratively and incrementally. User needs evolve and we need to adapt to the changes that can occur throughout a project’s life cycle.<br/><br/>To create products that align with user needs and business objectives, we encourage short development cycles that continuously improve the product.<br/><br/>Requirements and solutions evolve through collaboration between customers, end users and self-organizing, cross-functional teams.</p>
+              <Link href="#" className='font-semibold inline-block text-center my-[30px] hover:underline hover:text-[#6e6e6e] transition-all' >Let's Work Together <i className="transition-all translate-x-1 fa-solid fa-chevron-right"></i></Link>
+            </div>
+
+          </div>
+
+          <div className="flex justify-center items-center py-[25px]">
+
+            <div className='flex flex-col justify-center items-start w-[45%] mx-[10px] px-[25px] pb-[20px]'>
+              <h2 className='text-[30px] w-[75%] font-bold py-[20px] mb-4'>Agile Project Management: End chaos and gain control</h2>
+              <div className="flex flex-col justify-center items-start mx-[50px]">
+                <div className='flex justify-start items-start py-[20px] px-[20px] relative mt-[86px]'>
+                  <h4 className='text-[100px] pb-5 text-primary absolute top-[-26px]'>
+                  ❞
+                  </h4>
+                  <h4 className="text-[20px] w-[70%] font-bold my-2 ml-[86px]">
+                    Constantly super impressed with our PM. She is the most reliable member of all my teams. Thanks to her dedication and proactive approach the projects are running smoothly and we avoided some major delays or disasters.
+                  </h4>
+                </div>
+                <div className="flex ml-[28em]">
+                  <img src="https://pics.craiyon.com/2023-06-29/c42ecedad3464836a4a55d64d1136d47.webp" className='h-[50px] w-[50px] mx-[10px]' alt="" />
+                  <div className="flex flex-col">
+                    <p className='font-semibold text-[#000000]'>Author Name</p>
+                    <p className='text-[#5c5c5c]'>Author Designation</p>
+                  </div>
+                </div>
+              </div>
+              <Link href="#" className='font-semibold inline-block text-center my-[30px] hover:underline hover:text-[#6e6e6e] transition-all' >Let's Work Together <i className="transition-all translate-x-1 fa-solid fa-chevron-right"></i></Link>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1530464684439-723262c0d16e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZhcm1pbmd8ZW58MHwxfDB8fHww" className='rounded-md w-[30%]' alt="Soil" />
+
+          </div>
+
+
+          <div className="flex flex-col justify-center items-center py-[40px]">
+            <h2 className='text-[30px] font-bold my-[20px]'>What our partners say about cooperating</h2>
+
+            <div className="flex justify-center items-center my-[35px]">
+
+              <div className="flex flex-col justify-center items-start w-[25%] mx-[20px]">
+                <img src="" alt="Logo" className='font-bold text-[30px] text-primary' />
+                <p className='text-[13px] my-[15px] text-[#353535]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta culpa accusamus ullam, dignissimos dolorum voluptatum quasi earum sunt atque repudiandae incidunt id eos repellat reprehenderit? Odio temporibus beatae doloribus id?</p>
+                <div className="flex my-[10px]">
+                  <img src="https://pics.craiyon.com/2023-06-29/c42ecedad3464836a4a55d64d1136d47.webp" className='h-[50px] w-[50px] mx-[10px]' alt="" />
+                  <div className="flex flex-col">
+                    <p className='font-semibold text-[#000000]'>Author Name</p>
+                    <p className='text-[#5c5c5c]'>Author Designation</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-center items-start w-[25%] mx-[20px]">
+                <img src="" alt="Logo" className='font-bold text-[30px] text-primary' />
+                <p className='text-[13px] my-[15px] text-[#353535]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta culpa accusamus ullam, dignissimos dolorum voluptatum quasi earum sunt atque repudiandae incidunt id eos repellat reprehenderit? Odio temporibus beatae doloribus id?</p>
+                <div className="flex my-[10px]">
+                  <img src="https://pics.craiyon.com/2023-06-29/c42ecedad3464836a4a55d64d1136d47.webp" className='h-[50px] w-[50px] mx-[10px]' alt="" />
+                  <div className="flex flex-col">
+                    <p className='font-semibold text-[#000000]'>Author Name</p>
+                    <p className='text-[#5c5c5c]'>Author Designation</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-center items-start w-[25%] mx-[20px]">
+                <img src="" alt="Logo" className='font-bold text-[30px] text-primary' />
+                <p className='text-[13px] my-[15px] text-[#353535]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta culpa accusamus ullam, dignissimos dolorum voluptatum quasi earum sunt atque repudiandae incidunt id eos repellat reprehenderit? Odio temporibus beatae doloribus id?</p>
+                <div className="flex my-[10px]">
+                  <img src="https://pics.craiyon.com/2023-06-29/c42ecedad3464836a4a55d64d1136d47.webp" className='h-[50px] w-[50px] mx-[10px]' alt="" />
+                  <div className="flex flex-col">
+                    <p className='font-semibold text-[#000000]'>Author Name</p>
+                    <p className='text-[#5c5c5c]'>Author Designation</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div className="flex justify-evenly items-center w-screen mt-[70px] my-[30px]">
+
+            <div className="flex flex-col justify-center items-center">
+              <h1 className='text-[35px] text-primary font-bold'>15+</h1>
+              <p className='text-[13px] text-[#414141]'>Years On Market</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <h1 className='text-[35px] text-primary font-bold'>600+</h1>
+              <p className='text-[13px] text-[#414141]'>People On Board</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <h1 className='text-[35px] text-primary font-bold'>1000+</h1>
+              <p className='text-[13px] text-[#414141]'>Projects Delivered</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <h1 className='text-[35px] text-primary font-bold'>73</h1>
+              <p className='text-[13px] text-[#414141]'>Our Score</p>
+            </div>
+
+          </div>
+
+        </main>
+
+      </section>
 
     </>
   )

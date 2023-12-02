@@ -59,7 +59,7 @@ const Navbar = () => {
           <li className="navbar-item"><NavLink href="#" className={`nav-link ${NavLinkClassName}`}>Contact</NavLink></li>
         </ul>
         <div className="right">
-          <NavLink href="#" className={`nav-btn py-[13px] px-[35px] text-[13px] rounded-md border-[1px] hover:bg-primary-hover ${navBtnStyle}`}>Sign Up</NavLink>
+          <NavLink href="#" className={`nav-btn py-[13px] px-[35px] text-[13px] rounded-md border-[1px] hover:bg-primary-hover font-semibold ${navBtnStyle}`}>Sign Up</NavLink>
         </div>
       </nav>
     </div>
